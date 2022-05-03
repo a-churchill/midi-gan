@@ -72,7 +72,7 @@ def main(is_tune: bool):
         model.load_state_dict(model_state)
 
     else:
-        writer = SummaryWriter("runs/midi_net_5")
+        writer = SummaryWriter("runs/midi_gan_1")
         model = GAN(**best_config)
         train(model, dataloader, writer)
 
